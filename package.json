@@ -4,6 +4,7 @@
   "version": "0.0.0-alfa",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .next && rm -rf node_modules",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,7 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.15",
-    "@szum-tech/design-system": "^1.5.3",
+    "@szum-tech/design-system": "^1.5.4",
     "firebase": "^9.17.1",
     "firebase-admin": "^11.5.0",
     "next": "latest",

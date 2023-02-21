@@ -650,10 +650,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@szum-tech/design-system@^1.5.3":
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.5.3.tgz#834253577be933b4c4d4a0e20ceb84fa5694172f"
-  integrity sha512-rv2qSvqu5cSn36NcOq/q8RvoobIe/GpPRbgrfSY6ALRSYbgr/jRGrNMurdkJ/5uzmnbP9bZ0Myefn79koi/9WQ==
+"@szum-tech/design-system@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.5.4.tgz#57c088369395d3302a59a8ca0566e58800ce09e6"
+  integrity sha512-ypTFGZfxv0epqokdh/1/ngw7SjnL3VskPBPH+eMglDQjBcl97bKhiG3jrRc+cnmHrzTmzVvtfwoaBZwDtrEMrg==
   dependencies:
     "@heroicons/react" "^2.0.15"
     class-variance-authority "^0.4.0"
