@@ -7,7 +7,11 @@ module.exports = {
     "./node_modules/@szum-tech/design-system/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {}
+    extend: {
+      height: {
+        app: "calc(100vh - 4rem)"
+      }
+    }
   },
   plugins: [],
   presets: [require("@szum-tech/design-system/tailwindcss/main-preset")]

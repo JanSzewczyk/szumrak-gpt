@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .info-text {
+    @apply typography-body-1 rounded bg-gray-700 p-4;
+  }
+}
