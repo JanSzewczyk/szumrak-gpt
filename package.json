@@ -12,8 +12,8 @@
     "prettier:write": "prettier --write ."
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.15",
-    "@szum-tech/design-system": "^1.5.4",
+    "@heroicons/react": "^2.0.16",
+    "@szum-tech/design-system": "^1.5.5",
     "firebase": "^9.17.1",
     "firebase-admin": "^11.5.0",
     "next": "latest",
@@ -25,16 +25,16 @@
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.0",
-    "@types/node": "18.11.3",
+    "@types/node": "^18.14.0",
     "@types/prettier": "^2.7.2",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
     "prettier": "^2.8.4",
-    "prettier-plugin-tailwindcss": "^0.2.2",
+    "prettier-plugin-tailwindcss": "^0.2.3",
     "tailwind-scrollbar": "^2.1.0",
-    "tailwindcss": "^3.2.6",
-    "typescript": "4.9.4"
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5"
   }
 }
