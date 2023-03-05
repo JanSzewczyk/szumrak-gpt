@@ -3,6 +3,13 @@ import { getServerSession } from "next-auth";
 import SessionProvider from "@components/SessionProvider";
 import Login from "@components/Login";
 import { authOptions } from "@api/auth/[...nextauth]";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SzumrakGTP",
+  viewport: "width=device-width, initial-scale=1",
+  icons: "/favicon.ico"
+};
 
 type RootLayoutProps = {
   children: React.ReactNode;
