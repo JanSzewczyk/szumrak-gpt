@@ -1,18 +1,19 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 import query from "@lib/chatgpt/query-api";
 import { Message } from "@types";
-import { adminDb } from "@lib/firebase/admin";
 import admin from "firebase-admin";
+import { adminDb } from "@lib/firebase/admin";
 
-type Data = {
-  answer: string;
-};
-export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  const { prompt, model, session } = req.body;
+export async function POST(request: NextRequest) {
+  const { prompt, model, session } = await request.json();
 
   if (!prompt) {
-    res.status(400).json({ answer: "Please provide a message!" });
-    return;
+    return NextResponse.json(
+      { answer: "Please provide a message!" },
+      {
+        status: 400
+      }
+    );
   }
 
   const response = await query(prompt, model);
@@ -33,5 +34,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     .collection("messages")
     .add(answerMessage);
 
-  res.status(200).json({ answer: answerMessage.text });
+  return NextResponse.json({ answer: answerMessage.text }, { status: 200 });
 }
