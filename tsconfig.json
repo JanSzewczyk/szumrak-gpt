@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@api/*": ["pages/api/*"],
+      "@api/*": ["app/api/*"],
       "@components/*": ["components/*"],
       "@lib/*": ["lib/*"],
       "@types": ["types/index.ts"],

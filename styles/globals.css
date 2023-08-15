@@ -6,6 +6,6 @@
 
 @layer components {
   .info-text {
-    @apply typography-body-1 rounded bg-gray-700 p-4;
+    @apply typography-body-1 rounded bg-gray-200 p-4;
   }
 }
