@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
 import query from "@lib/chatgpt/query-api";
 import { Message } from "@types";
 import admin from "firebase-admin";
 import { adminDb } from "@lib/firebase/admin";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   const { prompt, model, session } = await request.json();
