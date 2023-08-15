@@ -1,13 +1,12 @@
 import { BeakerIcon, BoltIcon, ExclamationTriangleIcon } from "@heroicons/react/20/solid";
 import NewChat from "@components/NewChat";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@api/auth/[...nextauth]/route";
 import { doc, getDoc } from "@firebase/firestore";
 import { db } from "@lib/firebase";
 import Link from "next/link";
 
 export default async function HomePage() {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession();
   const chatConfiguration = await getDoc(doc(db, "users", session?.user?.email!));
   const chatConfig = chatConfiguration.data()?.config;
 

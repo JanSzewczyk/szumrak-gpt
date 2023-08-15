@@ -3,7 +3,6 @@ import { getServerSession } from "next-auth";
 
 import SessionProvider from "@components/SessionProvider";
 import Login from "@components/Login";
-import { authOptions } from "@api/auth/[...nextauth]/route";
 
 import { Metadata } from "next";
 
@@ -18,7 +17,7 @@ type RootLayoutProps = {
 };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession();
 
   return (
     <html className="dark">
