@@ -1,7 +1,7 @@
 import { BeakerIcon, BoltIcon, ExclamationTriangleIcon } from "@heroicons/react/20/solid";
 import NewChat from "@components/NewChat";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@api/auth/[...nextauth]";
+import { authOptions } from "@api/auth/[...nextauth]/route";
 import { doc, getDoc } from "@firebase/firestore";
 import { db } from "@lib/firebase";
 import Link from "next/link";
@@ -46,9 +46,7 @@ export default async function HomePage() {
             <h2 className="typography-subtitle-1">Capabilities</h2>
           </div>
           <div className="space-y-2">
-            {/*<p className="info-text">Change the ChatGPT Model to use</p>*/}
             <p className="info-text">Messages are stored in Firebase's Firestore</p>
-            {/*<p className="info-text">Hot Toast notifications when ChtGPT is thinking!</p>*/}
           </div>
         </div>
 
