@@ -16,7 +16,7 @@ export default async function HomePage() {
 
       <div className="mb-8">
         {chatConfig ? (
-          <Link href="chat">
+          <Link href="/chat">
             <button className="typography-subtitle-1 hover:text-primary-500">
               Lets Chat with {chatConfig.name}
             </button>
